@@ -14,7 +14,7 @@ export default function Result() {
 
   const ApiSendData = async () => {
     try {
-      const response = await axios.post('https://clear-zone.duckdns.org:5000/api/add_data', {
+      const response = await axios.post('https://clear-zone.duckdns.org/api/add_data', {
         astId: astId,
         bacteria: bacteria,
         name: name,

@@ -1,6 +1,5 @@
 "use client"
 import Link from 'next/link'
-import logo from './assets/logo2.png'
 import Image from 'next/image';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
@@ -22,7 +21,7 @@ export default function Home() {
 
   const fetchDataFromApi = async () => {
     try {
-        const response = await axios.get('https://clear-zone.duckdns.org:5000/api/get_all_gallery');
+        const response = await axios.get('https://clear-zone.duckdns.org/api/get_all_gallery');
         const responseData = response.data
         if (responseData) {
           setResponedata(responseData);
@@ -43,7 +42,7 @@ export default function Home() {
       <div className="py-3 md:py-6 flex items-center w-full bg-white justify-center drop-shadow-[0_4px_2px_rgba(0,0,0,0.25)]">
         <div>
         <Image
-          src={logo}
+          src="/logo2.png"
           alt="Logo"
           className='flex flex-col items-center w-48 md:w-64' 
           width={250}
