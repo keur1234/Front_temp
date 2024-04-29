@@ -22,7 +22,7 @@ export default function Import_Image() {
         setLoading(true);
         setLoading('Analysing...');
         await new Promise(resolve => setTimeout(resolve, 1000));
-        const response = await fetch('https://clear-zone.duckdns.org/api/process_image', {
+        const response = await fetch('https://api-clear-zone.duckdns.org/api/process_image', {
             method: 'POST',
             body: formData
         });

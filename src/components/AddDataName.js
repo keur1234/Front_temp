@@ -18,7 +18,7 @@ export default function AddDataName({ onShowNumberInput , currentInde, dataLengt
 
   const TestInfoApi = async () => {
     try {
-      const response = await axios.post('https://clear-zone.duckdns.org/api/test_info', {
+      const response = await axios.post('https://api-clear-zone.duckdns.org/api/test_info', {
         astId: astId,
         bacteria: bacteria,
         name: name,

@@ -14,7 +14,7 @@ export default function ResultById({params}) {
 
   const fetchDataResultById = async () => {
     try {
-        const response = await axios.post('https://clear-zone.duckdns.org/api/get_data_by_astID', {
+        const response = await axios.post('https://api-clear-zone.duckdns.org/api/get_data_by_astID', {
           astID: astId.slug
         });
         const responseData = response.data
